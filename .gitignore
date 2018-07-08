@@ -1,0 +1,6 @@
+
+## Dependency directory
+
+odoo-venv
+.vscode
+*.pyc
