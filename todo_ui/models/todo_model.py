@@ -17,7 +17,7 @@ class Stage(models.Model):
     desc = fields.Text('Description')
     state = fields.Selection(
         [('draft', 'New'), ('open', 'Started'),
-        ('done', 'Closed')], 'State')
+         ('done', 'Closed')], 'State')
     docs = fields.Html('Documentation')
     # Numeric fields:
     sequence = fields.Integer('Sequence')
