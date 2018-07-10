@@ -83,6 +83,11 @@ class Stage(models.Model):
 
 class TodoTask(models.Model):
     _inherit = 'todo.task'
+    _name = 'todo.task'
+
+
+    is_done = fields.Boolean('Done?')
+
 
     # Relational fields
     stage_id = fields.Many2one('todo.task.stage', 'Stage')
